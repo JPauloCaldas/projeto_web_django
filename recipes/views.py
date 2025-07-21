@@ -3,12 +3,12 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('HOME')
+    return render(request,'home.html')
 
 
 def sobre(request):
-    return HttpResponse('SOBRE do arquivo views.py')
+    return render(request, 'sobre.html')
 
 def contato(request):
-    return HttpResponse('CONTATO')
+    return render(request, 'contatos.html')
 
